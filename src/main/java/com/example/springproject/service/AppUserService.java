@@ -46,7 +46,7 @@ public class AppUserService {
         return appUserRepository.deleteUser(id);
     }
 
-    public Post[] getUserPostsById(int id, Principal principal) throws Exception {
+    public Post[] getUserPostsById(int id, Principal principal) throws SignatureException {
         AppUser appUser = appUserRepository.findUserByUsername(principal.getName());
         if(appUser.getId()==id){
             return webClient

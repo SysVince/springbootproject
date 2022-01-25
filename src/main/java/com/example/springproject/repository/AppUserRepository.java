@@ -2,14 +2,13 @@ package com.example.springproject.repository;
 
 
 import com.example.springproject.model.AppUser;
-import com.example.springproject.model.AppUserDTO;
 import org.springframework.stereotype.Repository;
 
 import java.security.Principal;
 import java.security.SignatureException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.NoSuchElementException;
+
 
 @Repository
 public class AppUserRepository {
@@ -32,7 +31,6 @@ public class AppUserRepository {
             throw new SignatureException("Wrong signature");
         }
     }
-
 
 
     public AppUser createUser(AppUser appUser) throws Exception {

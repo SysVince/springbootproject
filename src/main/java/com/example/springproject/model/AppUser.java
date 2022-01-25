@@ -1,8 +1,5 @@
 package com.example.springproject.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
 
 public class AppUser {
 
