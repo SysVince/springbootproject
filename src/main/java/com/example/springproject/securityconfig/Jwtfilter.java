@@ -1,4 +1,4 @@
-package com.example.springproject.SecurityConfig;
+package com.example.springproject.securityconfig;
 
 
 import com.example.springproject.service.JwtHelper;
